@@ -17,6 +17,8 @@ public class SpikeGenerator : MonoBehaviour
     public void generateSpike()
     {
         GameObject SpikeIns = Instantiate(spike, transform.position, transform.rotation);
+
+        SpikeIns.GetComponent<SpikeScript>().spikeGenerator = this;
     }
 
     // Update is called once per frame
