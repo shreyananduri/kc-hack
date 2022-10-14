@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5176203409013367055}
   - component: {fileID: 6466209892244888903}
   - component: {fileID: -3178309492187594713}
+  - component: {fileID: -5994984638681581533}
   m_Layer: 0
   m_Name: Spike
   m_TagString: Untagged
@@ -93,7 +94,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5174518631386938627}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -132,4 +133,16 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 2
+  m_Constraints: 6
+--- !u!114 &-5994984638681581533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5174518631386938627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e87a3a1680ee2094188cd172c25aaad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
