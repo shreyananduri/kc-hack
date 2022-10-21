@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneChange : MonoBehaviour
+public class StoryNext : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void ChangeScene()
     {
-        SceneManager.LoadScene("game2");
+        SceneManager.LoadScene("game1");
     }
 }

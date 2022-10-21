@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
+//using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -43,18 +44,25 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("ground"))
+        if (collision.gameObject.CompareTag("ground"))
         {
-            if(isGrounded == false)
+            if (isGrounded == false)
             {
                 isGrounded = true;
             }
         }
+    }
 
-        if (collision.gameObject.CompareTag("spike"))
+        /*if (collision.gameObject.CompareTag("spike"))
         {
             isAlive = false;
             Time.timeScale = 0;
+            CompleteLevel();
         }
     }
+
+    private void CompleteLevel()
+    {
+        SceneManager.LoadScene("mid");
+    }*/
 }

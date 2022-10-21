@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpikeScript : MonoBehaviour
 {
@@ -22,5 +23,15 @@ public class SpikeScript : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            CompleteLevel();
+        }
+    }
+
+    private void CompleteLevel()
+    {
+        SceneManager.LoadScene("mid");
     }
 }
